@@ -7,19 +7,61 @@
     <title>Formulários Inteligentes</title>
 </head>
 <body>
-    <form id="inscricao">
-        <label>Nome</label>
-        <input type="text" id="Nome">
+    <section>
+        <form id="inscricao">
+            <label>Nome</label>
+                <br>
+                <input type="text" id="nome">
+                    <br>
+                <label>Idade</label>
+                    <br>
+                <input type="number" id="idade">
+                    <br>
+                <label>Nivel de experiencia</label>
+                    <br>
+                <input type="number" id="nivel">
+                <br>
+                <button type="button" onclick="validar()">Enviar</button>
+            </form>
         <br>
-        <label>Idade</label>
-        <input type="number" id="idade">
-        <br>
-        <label>Nivel de experiencia</label>
-        <input type="number" id="nivel">
-        <br>
-        <button type="button" onclick="validar()">Enviar</button>
-    </form>
-    <p id="mensagem"></p>
+    <br>
+        <form id="SENHA">
+            <label>Senha</label>
+                <br>
+            <input type="password" id="senha1">
+                <br>
+            <label>Verificação de Senha</label>
+                <br>
+            <input type="password" id="senha2">
+                <br>
+                <br>
+            <div id="botoes">
+                <button type="button" onclick="validarSenha()">Criar Senha</button>
+                    <br>
+                <br>
+            </div>
+        </form>
+    <br>
+        <form id="desconto">
+            <p>Cargo<p>
+                    <br>
+                <label for="estudante">Estudante</label>
+                <input type="radio" id="estudante" name="cargo" value="estudante">
+                <label for="outro">Outro</label>
+                <input type="radio" id="outro" name="cargo" value="outro">
+                    <br>
+            <button type="button" onclick="validarDesconto()">Desconto</button>
+        </form>
+        <div class="notificacoes">
+            <p id="mensagem"></p>
+                <br>
+            <p id="senha"></p>
+                <br>
+            <p id="msg"></p>
+                <br>
+            <p id="anos"></p>
+        </div>
+    </section>
     <script src="/script/script.js"></script>
 </body>
 </html>
